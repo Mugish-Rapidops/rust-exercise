@@ -1,8 +1,13 @@
 // 1. Declare a constant MAX_POINTS at the global level (outside main) with value 100,000 (using underscore separator).
 const MAX_POINTS: u32 = 100_000;
 
-use rust_day01_exercise::variable_exercise::variable_exercise::{
-    basic_variable, bonus_challenge, scope_and_shadowing, type_annotations, variable_shadowing,
+use rust_day01_exercise::{
+    closure_exercise::closure_exercise::{
+        apply_operation, basic_closure, bonus_fnonece_fnmut_fn, closure_environment_capture, clouser_in_iterator
+    },
+    variable_exercise::variable_exercise::{
+        basic_variable, bonus_challenge, scope_and_shadowing, type_annotations, variable_shadowing,
+    },
 };
 fn main() {
     basic_variable();
@@ -26,4 +31,13 @@ fn main() {
     type_annotations();
     scope_and_shadowing();
     bonus_challenge();
+
+    basic_closure();
+    closure_environment_capture();
+    let add_five = |x: i32| x + 5;
+    let double = |x: i32| x * 2;
+    println!("{}", apply_operation(add_five, 10));
+    println!("{}", apply_operation(double, 10));
+    clouser_in_iterator();
+    bonus_fnonece_fnmut_fn();
 }
