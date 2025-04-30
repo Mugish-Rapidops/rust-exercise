@@ -8,13 +8,11 @@ use rust_day01_exercise::{
     closure_exercise::closure_exercise::{
         apply_operation, basic_closure, bonus_fnonece_fnmut_fn, closure_environment_capture,
         clouser_in_iterator,
-    },
-    function_exercise::function_exercise::{
+    }, function_exercise::function_exercise::{
         apply_twice, basic_function, calculate_area, factorial, find_max, is_enven,
-    },
-    variable_exercise::variable_exercise::{
+    }, loop_exercise::loop_exercise::{basic_loop_with_counter, for_loop_with_range, loop_with_pattern_matching, nested_loops_with_labels, while_loop_with_condition}, variable_exercise::variable_exercise::{
         basic_variable, bonus_challenge, scope_and_shadowing, type_annotations, variable_shadowing,
-    },
+    }
 };
 fn main() {
     basic_variable();
@@ -63,5 +61,11 @@ fn main() {
     let words = vec!["apple", "banana", "cherry"];
     println!("Max word: {:?}", find_max(&words));
     let increament = |x| x * 2;
-    println!("{}", apply_twice(increament, 5))
+    println!("{}", apply_twice(increament, 5));
+
+    basic_loop_with_counter();
+    while_loop_with_condition();
+    for_loop_with_range();
+    nested_loops_with_labels();
+    loop_with_pattern_matching();
 }
