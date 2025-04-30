@@ -1,0 +1,51 @@
+# Rust build output
+/rust_day01_exercise/target/
+
+# Cargo package files
+**/*.rs.bk
+/rust_day01_exercise/Cargo.lock
+
+# IDE/editor specific
+# VS Code
+.vscode/
+/*.code-workspace
+
+# JetBrains (CLion, IntelliJ, etc.)
+.idea/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# MacOS
+.DS_Store
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Misc
+*.log
+*.tmp
+
+# By default, ignore binary output if you use 'cargo build --release'
+/rust_day01_exercise/target/release/
+/rust_day01_exercise/target/debug/
+
+# Optional: ignore coverage results
+/coverage/
+
+# Optional: if using tools like tarpaulin for test coverage
+htmlcov/
+tarpaulin-report.html
+
+# Optional: ignore node_modules if using frontend (e.g., Yew or Tauri)
+node_modules/
+
+# Optional: ignore dotenv files
+.env
+.env.*
