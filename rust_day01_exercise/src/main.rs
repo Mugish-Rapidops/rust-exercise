@@ -1,9 +1,16 @@
 // 1. Declare a constant MAX_POINTS at the global level (outside main) with value 100,000 (using underscore separator).
 const MAX_POINTS: u32 = 100_000;
 
+use core::num;
+use std::vec;
+
 use rust_day01_exercise::{
     closure_exercise::closure_exercise::{
-        apply_operation, basic_closure, bonus_fnonece_fnmut_fn, closure_environment_capture, clouser_in_iterator
+        apply_operation, basic_closure, bonus_fnonece_fnmut_fn, closure_environment_capture,
+        clouser_in_iterator,
+    },
+    function_exercise::function_exercise::{
+        apply_twice, basic_function, calculate_area, factorial, find_max, is_enven,
     },
     variable_exercise::variable_exercise::{
         basic_variable, bonus_challenge, scope_and_shadowing, type_annotations, variable_shadowing,
@@ -40,4 +47,21 @@ fn main() {
     println!("{}", apply_operation(double, 10));
     clouser_in_iterator();
     bonus_fnonece_fnmut_fn();
+
+    let greet = basic_function("Alice");
+    println!("{}", greet);
+    println!("{}", calculate_area(-1.0, 5.0));
+    println!("{}", calculate_area(3.5, 4.2));
+    println!("is 4 even? {}", is_enven(4));
+    println!("is 7 even? {}", is_enven(7));
+    println!("5! = {}", factorial(5));
+    println!("0! = {}", factorial(0));
+    let numbers = vec![32, 12, 78, 3];
+    println!("Max number: {:?}", find_max(&numbers));
+    let numbers: Vec<i32> = vec![];
+    println!("Max number: {:?}", find_max(&numbers));
+    let words = vec!["apple", "banana", "cherry"];
+    println!("Max word: {:?}", find_max(&words));
+    let increament = |x| x * 2;
+    println!("{}", apply_twice(increament, 5))
 }
