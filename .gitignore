@@ -1,5 +1,7 @@
 # Rust build output
 /rust_day01_exercise/target/
+/rust_day02_exercise/target/
+/rust_day03_exercise/target/
 
 # Cargo package files
 **/*.rs.bk
@@ -34,7 +36,11 @@ Desktop.ini
 
 # By default, ignore binary output if you use 'cargo build --release'
 /rust_day01_exercise/target/release/
+/rust_day02_exercise/target/release/
+/rust_day03_exercise/target/release/
 /rust_day01_exercise/target/debug/
+/rust_day02_exercise/target/debug/
+/rust_day03_exercise/target/debug/
 
 # Optional: ignore coverage results
 /coverage/
