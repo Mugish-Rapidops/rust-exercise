@@ -2,6 +2,7 @@
 /rust_day01_exercise/target/
 /rust_day02_exercise/target/
 /rust_day03_exercise/target/
+/thread_exercise/target/
 
 # Cargo package files
 **/*.rs.bk
@@ -38,9 +39,16 @@ Desktop.ini
 /rust_day01_exercise/target/release/
 /rust_day02_exercise/target/release/
 /rust_day03_exercise/target/release/
+/thread_exercise/target/release/
 /rust_day01_exercise/target/debug/
 /rust_day02_exercise/target/debug/
 /rust_day03_exercise/target/debug/
+/rust_day03_exercise/example.txt
+/thread_exercise/target/debug/
+/thread_exercise
+/CONCURRENCY_DEEP_DIVE.md
+/README_THREADS.md
+/README.md
 
 # Optional: ignore coverage results
 /coverage/
